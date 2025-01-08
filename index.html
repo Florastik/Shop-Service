@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервіс продажу</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Підключення CSS стилів -->
+    <script src="script.js" defer></script>
+    <!-- Підключення JavaScript -->
+    <link href="https://fonts.googleapis.com/css2?family=Dr+Krapka+Square&display=swap" rel="stylesheet">
+    <!-- Підключення шрифту -->
+</head>
+
+<body>
+    <header>
+        <h1>Наш сервіс продажу</h1>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="loadPage('home')">Головна</a></li>
+                <li><a href="javascript:void(0);" onclick="loadPage('services')">Послуги</a></li>
+                <li><a href="javascript:void(0);" onclick="loadPage('social')">Наші соцмережі</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section id="home" class="page">
+            <h2>Ласкаво просимо!</h2>
+            <p>Придбайте Discord Nitro, Telegram Premium, Robux для Roblox і Minecraft за вигідними цінами.</p>
+        </section>
+
+        <section id="services" class="page" style="display: none; text-align: center;">
+            <h2>Наші послуги</h2>
+
+            <div class="service">
+                <div class="service-box">
+                    <h3>Discord Nitro</h3>
+                    <button class="toggle-button" onclick="toggleOptions(this)">Виберіть план</button>
+                    <div class="purchase">
+                        <div class="options" style="display: none;">
+                            <select>
+                                <option>1 місяць - 8 USD</option>
+                                <option>12 місяців - 80 USD</option>
+                            </select>
+                            <p class="price">Ціна: <span>8 USD</span></p>
+                            <button class="buy-button">Купити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-box">
+                    <h3>Telegram Premium</h3>
+                    <button class="toggle-button" onclick="toggleOptions(this)">Виберіть план</button>
+                    <div class="purchase">
+                        <div class="options" style="display: none;">
+                            <select>
+                                <option>1 місяць - 5 USD</option>
+                            </select>
+                            <p class="price">Ціна: <span>5 USD</span></p>
+                            <button class="buy-button">Купити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-box">
+                    <h3>Robux для Roblox</h3>
+                    <button class="toggle-button" onclick="toggleOptions(this)">Виберіть кількість</button>
+                    <div class="purchase">
+                        <div class="options" style="display: none;">
+                            <select>
+                                <option>800 Robux - 10 USD</option>
+                                <option>2000 Robux - 25 USD</option>
+                            </select>
+                            <p class="price">Ціна: <span>10 USD</span></p>
+                            <button class="buy-button">Купити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-box">
+                    <h3>Minecraft</h3>
+                    <button class="toggle-button" onclick="toggleOptions(this)">Виберіть товар</button>
+                    <div class="purchase">
+                        <div class="options" style="display: none;">
+                            <select>
+                                <option>Ліцензія - 20 USD</option>
+                            </select>
+                            <p class="price">Ціна: <span>20 USD</span></p>
+                            <button class="buy-button">Купити</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Новий розділ для соціальних мереж -->
+        <section id="social" class="page" style="display: none; text-align: center;">
+            <h2>Наші соцмережі</h2>
+            <!-- Іконки соцмереж -->
+            <a href="https://discord.com/your-discord-link" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670157.png" alt="Discord" style="width:50px; height:50px;">
+            </a>
+            <a href="https://telegram.org/your-telegram-link" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" alt="Telegram" style="width:50px; height:50px;">
+            </a>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

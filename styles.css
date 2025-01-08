@@ -1,0 +1,128 @@
+body {
+    font-family: 'Dr Krapka Square', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    margin-top: 10px;
+    /* Відступ зверху для навігації */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Використання flexbox для горизонтального розташування */
+    justify-content: center;
+    /* Центрування елементів */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-box {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    /* Максимальна ширина для великих екранів */
+}
+
+.toggle-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.options {
+    margin-top: 10px;
+    display: none;
+    /* Сховати до відкриття */
+}
+
+.price {
+    font-weight: bold;
+}
+
+.buy-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Медіа-запити для мобільних пристроїв */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        /* Горизонтальне розташування пунктів меню */
+        flex-wrap: wrap;
+        /* Дозволити перенесення елементів */
+        justify-content: center;
+        /* Центрування елементів */
+        padding-top: 10px;
+        /* Відступ зверху для кращого вигляду */
+    }
+    .service-box {
+        width: calc(100% - 40px);
+        /* Адаптивна ширина з урахуванням відступів */
+        margin-left: auto;
+        /* Центрування блоків */
+        margin-right: auto;
+        /* Центрування блоків */
+        max-width: none;
+        /* Відміна максимального обмеження ширини */
+    }
+}
